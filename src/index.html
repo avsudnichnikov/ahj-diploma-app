@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Organizer</title>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered is-gapless">
+        <div class="column is-two-thirds-desktop columns chat">
+          <div id="organizer">
+            <article id="user-tile" class="organizer-block">
+              <div class="field  has-addons">
+                <p class="control  is-expanded"> Vasya </p>
+              </div>
+            </article>
+            <article id="messages-tile" class="organizer-block"></article>
+            <article id="input-tile" class="organizer-block">
+              <div class="field  has-addons">
+                <p class="control  is-expanded">
+                  <input id="send-inp" class="input" placeholder="message...">
+                </p>
+                <p class="control">
+                  <button id="send-btn" class="button">
+                    <span class="icon is-small has-text-info-dark">
+                      <i class="fas fa-paper-plane"></i>
+                    </span>
+                  </button>
+                </p>
+                <p class="control">
+                  <button class="button">
+                    <span class="icon is-small has-text-info-dark">
+                      <i class="fas fa-paperclip"></i>
+                    </span>
+                  </button>
+                </p>
+                <p class="control">
+                  <button id="search-btn" class="button">
+                    <span class="icon is-small has-text-info-dark">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </button>
+                </p>
+                <p class="control">
+                  <button class="button">
+                    <span class="icon is-small has-text-info-dark">
+                      <i class="fas fa-terminal"></i>
+                    </span>
+                  </button>
+                </p>
+                <p class="control">
+                  <button class="button">
+                    <span class="icon is-small has-text-info-dark">
+                      <i class="fas fa-grin-tongue-wink"></i>
+                    </span>
+                  </button>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<div class="modal is-active" id="join">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Sign in</p>
+    </header>
+    <section class="modal-card-body">
+      <div class="field">
+        <label for="join-username" class="label">Username</label>
+        <input id="join-username" class="input is-primary" value="Vasya">
+      </div>
+      <div class="field">
+        <label for="join-password" class="label">Password</label>
+        <input id="join-password" class="input is-primary" value="Vasya">
+      </div>
+    </section>
+    <footer class="modal-card-foot is-justify-content-end">
+      <button id="join-btn" class="button is-primary">Join</button>
+      <div id="join-helper"></div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
